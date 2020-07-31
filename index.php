@@ -23,13 +23,22 @@ echo json_encode($search);
 
 echo "<hr>";
 
-echo "Carrega um usuário usando o login e a senha";
+echo "Carrega um usuário usando o login e a senha<br>";
 
 //carrega um usuário usando o login e a senha
 $usuario = new Usuario();
 $usuario->login("root","!@#$");
 
 echo $usuario;
+
+echo "<hr>";
+
+echo "Inseri um novo usuario no banco de dados<br>";
+$aluno = new Usuario("aluno02","@alun02");
+
+$aluno->insert();
+
+echo $aluno;
 
 
 ?>
