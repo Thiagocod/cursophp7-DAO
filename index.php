@@ -40,5 +40,10 @@ $aluno->insert();
 
 echo $aluno;
 
+echo "<hr>";
+$update = new Usuario();
+$update->loadById(3);
+$update->update("root2","senhaqualquer");
+
 
 ?>
